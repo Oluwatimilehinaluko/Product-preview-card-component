@@ -1,0 +1,176 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan2: hsl(158, 36%, 20%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%); 
+  
+    --ff-accent:'Fraunces', serif;
+    --ff-base: 'Montserrat', sans-serif; 
+    
+    --fw-regular:500;
+    --fw-bold:700;
+  }
+  *, 
+  *::before,
+  *::after { 
+   box-sizing: border-box;
+
+}
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+}
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+}
+  /*
+    5. Improve media defaults
+  */
+ img {
+    display: block;
+    max-width: 100%;
+}
+  /*
+    6. Remove built-in form typography styles
+  */
+input,
+button, 
+textarea, 
+select {
+    font: inherit;
+}
+  /*
+    7. Avoid text overflows
+  */
+p, 
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+  overflow-wrap: break-word;
+}
+ 
+h1,
+h2,
+h3 {
+    line-height: 2rem;
+ } 
+  
+/* general styling  */
+    
+    body {
+      font-family: var(--ff-base) ;
+      font-weight: var(--fw-regular);
+      font-size: 0.875rem;
+      color: var(--Dark-grayish-blue);
+      background-color: var(--Cream);
+      flex-direction: column;
+      min-height: 100vh;
+    
+      
+
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+    
+ }
+  
+ .flex-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+ }
+
+ .visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+ }
+
+ 
+ .product_price {
+    font-size: 2rem;
+    font-family:var(--ff-accent) ;
+    color: var(--Dark-cyan);
+ }
+
+  .product_details {
+    display: grid;
+    background-color: var(--White);
+    border-radius:  0 0.5rem 0.5rem  0;
+    overflow: hidden;
+    padding: 1.5rem;
+    gap: 1rem;
+    max-width: 685px;
+  }
+
+  .product { 
+    max-width: 685px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+ }
+
+  .product_note {
+    font-size: 1rem;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--Dark-grayish-blue);
+  }
+
+  .product_section {
+    font-size: 0.8125rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+  .product_name {
+    font-size: 2.5rem;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    color: var(--Very-dark-blue);
+  
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em 1.5em;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  font-weight: var(--fw-bold);
+  font-size: 0.825rem;
+} 
+
+ .button:is(:hover, :focus) {
+    background-color: var(--Dark-cyan2);
+
+ }
+ .product_img {
+    overflow: inherit;
+    
+}
